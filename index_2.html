@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Bomba - UNCC Group Bio</title>
+
+  <style>
+    /* Set the background and font for the whole page */
+    body {
+      background-color: #f0f4ff;
+      font-family: Arial, sans-serif;
+      color: #222222;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Top navigation bar */
+    nav {
+      background-color: #1a1a2e;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #e94560;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #e94560;
+    }
+
+    /* Hero / welcome section */
+    .hero {
+      background-color: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #e94560;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cccccc;
+    }
+
+    /* Section headings */
+    h2 {
+      font-size: 28px;
+      color: #1a1a2e;
+      border-bottom: 3px solid #e94560;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Mission section */
+    .mission {
+      background-color: white;
+      padding: 40px 60px;
+    }
+
+    .mission p {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 800px;
+    }
+
+    /* Team rules list */
+    .mission ul {
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    /* Team bios section */
+    .team {
+      padding: 40px 60px;
+    }
+
+    /* Each bio card */
+    .bio-card {
+      background-color: white;
+      border: 2px solid #1a1a2e;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    /* Avatar / photo */
+    .bio-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e94560;
+    }
+
+    /* Placeholder if no photo */
+    .avatar-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #1a1a2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 48px;
+      flex-shrink: 0;
+    }
+
+    .bio-info h3 {
+      font-size: 24px;
+      color: #1a1a2e;
+      margin: 0 0 5px 0;
+    }
+
+    .bio-info .role {
+      color: #e94560;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bio-info p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444444;
+    }
+
+    /* Moodboard section inside each bio */
+    .moodboard {
+      margin-top: 15px;
+    }
+
+    .moodboard h4 {
+      color: #1a1a2e;
+      margin-bottom: 10px;
+    }
+
+    /* Moodboard grid of items */
+    .moodboard-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .mood-item {
+      background-color: #f0f4ff;
+      border: 2px solid #1a1a2e;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #1a1a2e;
+      font-weight: bold;
+    }
+
+    .mood-item:hover {
+      background-color: #1a1a2e;
+      color: white;
+    }
+
+    /* Links section */
+    .bio-links {
+      margin-top: 10px;
+    }
+
+    .bio-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #e94560;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .bio-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a2e;
+      color: #cccccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: #e94560;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <h1>Team Bomba 💣</h1>
+    <div>
+      <a href="#mission">Mission</a>
+      <a href="#team">Team</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h2>Welcome to Team Bomba</h2>
+    <p>UNC Charlotte &nbsp;|&nbsp; Computer Science &nbsp;|&nbsp; Seniors 2025</p>
+    <p>Two CS seniors building cool things and making it to the finish line. 🎓</p>
+  </div>
+
+  <!-- MISSION SECTION -->
+  <div class="mission" id="mission">
+    <h2>🚀 Our Mission</h2>
+    <p>
+      We are Team Bomba — Ahmad Idris and Mohamed Shire, senior Computer Science students at UNC Charlotte.
+      Our mission is to write clean, working code that solves real problems. We believe that great software
+      comes from teamwork, communication, and never giving up when things get hard. As we finish our
+      senior year, we are focused on growing as engineers and being ready for the industry.
+    </p>
+
+    <h2>📋 Team Rules</h2>
+    <ul>
+      <li>Communicate early — don't go silent when you're stuck</li>
+      <li>Respect each other's time and schedule</li>
+      <li>Commit your code often so nothing gets lost</li>
+      <li>Ask for help before you waste hours stuck on one problem</li>
+      <li>Celebrate the small wins, not just the big ones</li>
+      <li>Be honest — if something isn't working, say so</li>
+      <li>Show up ready to contribute every time</li>
+    </ul>
+  </div>
+
+  <!-- TEAM BIOS SECTION -->
+  <div class="team" id="team">
+    <h2>👥 Meet the Team</h2>
+
+    <!-- AHMAD'S BIO -->
+    <div class="bio-card">
+
+      <!-- Avatar placeholder — replace with: <img src="photos/ahmad.jpg" alt="Ahmad Idris"> -->
+      <div class="avatar-placeholder">👤</div>
+
+      <div class="bio-info">
+        <h3>Ahmad Idris</h3>
+        <div class="role">Computer Science · UNCC Senior</div>
+
+        <p>
+          Hey, I'm Ahmad! I'm a senior CS student at UNC Charlotte. I enjoy building
+          software that solves real-world problems and I'm always looking to improve my skills.
+          I like working on both the frontend and backend, and I'm excited to take everything
+          I've learned at UNCC into my career.
+        </p>
+
+        <!-- Links -->
+        <div class="bio-links">
+          <a href="https://github.com/ahmad2wo" target="_blank">🐙 GitHub</a>
+          <a href="#" target="_blank">🔗 Portfolio</a>
+        </div>
+
+        <!-- Moodboard -->
+        <div class="moodboard">
+          <h4>💡 My CS Moodboard</h4>
+          <div class="moodboard-grid">
+            <span class="mood-item">💻 Full Stack Dev</span>
+            <span class="mood-item">🐍 Python</span>
+            <a class="mood-item" href="https://github.com/ahmad2wo" target="_blank">🐙 GitHub</a>
+            <span class="mood-item">🧩 Problem Solving</span>
+            <a class="mood-item" href="https://stackoverflow.com" target="_blank">🔍 Stack Overflow</a>
+            <span class="mood-item">🎓 UNCC CS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MOHAMED'S BIO -->
+    <div class="bio-card">
+
+      <!-- Avatar placeholder — replace with: <img src="photos/mohamed.jpg" alt="Mohamed Shire"> -->
+      <div class="avatar-placeholder">👤</div>
+
+      <div class="bio-info">
+        <h3>Mohamed Shire</h3>
+        <div class="role">Computer Science · UNCC Senior</div>
+
+        <p>
+          I'm Mohamed! I'm a senior CS student at UNC Charlotte who loves software engineering
+          and building systems that actually work at scale. I enjoy solving complex problems and
+          writing clean, efficient code. I'm looking forward to bringing everything I've learned
+          into a real engineering role after graduation.
+        </p>
+
+        <!-- Links -->
+        <div class="bio-links">
+          <a href="https://github.com/Mshire9" target="_blank">🐙 GitHub</a>
+          <a href="#" target="_blank">🔗 Portfolio</a>
+        </div>
+
+        <!-- Moodboard -->
+        <div class="moodboard">
+          <h4>💡 My CS Moodboard</h4>
+          <div class="moodboard-grid">
+            <span class="mood-item">⚙️ Software Eng.</span>
+            <span class="mood-item">☁️ Cloud / AWS</span>
+            <a class="mood-item" href="https://leetcode.com" target="_blank">🧩 LeetCode</a>
+            <span class="mood-item">🗄️ Databases</span>
+            <span class="mood-item">🔐 Cybersecurity</span>
+            <a class="mood-item" href="https://missing.csail.mit.edu" target="_blank">📖 MIT Missing Semester</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Team <span>Bomba</span> &nbsp;|&nbsp; UNC Charlotte &nbsp;|&nbsp; Computer Science &nbsp;|&nbsp; Seniors 2025</p>
+    <p>Ahmad Idris &amp; Mohamed Shire</p>
+  </footer>
+
+  <!-- JAVASCRIPT — simple beginner-level code -->
+  <script>
+
+    // Show a welcome message in the browser console when the page loads
+    window.onload = function() {
+      console.log("Welcome to Team Bomba's webpage!");
+    };
+
+    // Change bio card border color when you hover over it
+    var bioCards = document.querySelectorAll('.bio-card');
+
+    for (var i = 0; i < bioCards.length; i++) {
+      bioCards[i].addEventListener('mouseover', function() {
+        this.style.borderColor = '#e94560';
+      });
+
+      bioCards[i].addEventListener('mouseout', function() {
+        this.style.borderColor = '#1a1a2e';
+      });
+    }
+
+  </script>
+
+</body>
+</html>
